@@ -93,6 +93,7 @@ export function convertArgs2Options(argv: yargs.Arguments): Options {
     outDir: argv.out_dir as string,
     proxy: argv.proxy as string,
     githubToken: argv.github_token as string,
+    runAsGrid: argv.grid_node as string;
   };
 
   let versionsChrome, versionsGecko, versionsIe, versionsStandalone = undefined;
@@ -116,6 +117,7 @@ export function convertArgs2Options(argv: yargs.Arguments): Options {
     options.server = {};
     options.server.name = 'selenium';
     options.server.runAsNode = argv.standalone_node as boolean;
+    options.server.runAsGrid = argv.grid_node as string;
     options.server.runAsDetach = argv.detach as boolean;
     options.server.version = versionsStandalone;
     options.server.chromeLogs = argv.chrome_logs as string;
