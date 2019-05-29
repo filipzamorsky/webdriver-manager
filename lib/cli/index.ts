@@ -80,7 +80,7 @@ const standaloneNodeOption: yargs.Options = {
   type: 'boolean'
 };
 const GRID_NODE = 'grid_node';
-const standaloneNodeOption: yargs.Options = {
+const gridNodeOption: yargs.Options = {
   describe: 'Start the selenium grid server with role set to "node".',
   type: 'boolean'
 };
