@@ -43,8 +43,8 @@ export interface Server {
   edge?: string;
   // Detach the server and return the process to the parent.
   runAsDetach?: boolean;
-  // Run as role = node option.
-  runAsGrid?: boolean;
+  // Run as selenium grid = node option.
+  runAsGrid?: string;
   // Port number to start the server.
   port?: number;
 }
